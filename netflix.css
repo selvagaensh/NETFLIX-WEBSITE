@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+body{
+    background-color:black;
+}
+:root{
+    --primary: Poppins,"sans-sarif";
+    --secondary : Nunito,"sans-sarif";
+    --design : Roboto,"sans-sarif";
+    --primary-color:#000000;
+    --secondary-color:#E50914;
+}
+/*------mainpage style start-------*/
+.main-section .nav-bar span img{
+    width:150px;
+    height:50px;
+    position:absolute;
+    left:130px;
+}
+.main-section{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-image:url(images/hero.png);
+    background-size:cover;
+    background-blend-mode:darken;
+}
+.nav-bar{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+}
+.select{
+    position:absolute;
+    right:70px;
+}
+.select select{
+    font-family:var(--secondary);
+    background-color:var(--primary-color);
+    color:white;
+    padding:8px 16px;
+    border:1px solid white;
+    border-radius:5px;
+}
+.select .sign-in button{
+    font-family:var(--secondary);
+    padding:8px 16px;
+    background-color:var(--secondary-color);
+    color:white;
+    border-radius:5px;
+    outline:none;
+    border:none;
+}
+.content {
+    width:100vw;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align: center;
+    row-gap:20px;
+}
+.content .main-content{
+    font-family:var(--primary);
+    font-weight: bolder;
+    font-size:2.2rem;
+}
+.content .secondary-content{
+    font-family:var(--secondary);
+    font-weight: 700;
+    font-size:1rem;
+}
+.content .email-sign{
+    font-family:var(--design);
+    font-weight:light;
+    font-size:1rem;
+}
+.email-sign{
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+}
+.email-sign .email input{
+    padding:15px;
+    width:70%;
+    background-color:var(--primary-color);
+    outline:none;
+    border:none;
+    color:white;
+    font-family:var(--secondary);
+    font-weight:800;
+    font-size:1rem;
+    border-radius:4px;
+}
+.email-sign .email input:focus{
+    border:1px solid white;
+}
+
+.email-sign .email button{
+    padding:15px 20px;
+    background-color:var(--secondary-color);
+    border:None;
+    color:white;
+    font-family:var(--secondary);
+    font-weight:800;
+    font-size:1rem;
+    border-radius:4px;
+}
+/*--------------main page style ends----------*/
+.title{
+    padding-top:10px;
+    font-family:var(--primary);
+    font-weight:bolder;
+    font-size:22px;
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+    padding-left:70px;
+    background-color:black;
+    color:white;
+}
+.title .select-2 select{
+    font-family:var(--secondary);
+    background-color:var(--primary-color);
+    color:white;
+    padding:8px 16px;
+    border:1px solid white;
+    border-radius:5px;
+}
+/* body of the page start  */
+.shows{
+    background-color:var(--primary-color);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+    padding-top:30px;
+    align-content: center;
+    margin:0px 120px;
+}
+.sliders{
+    display:flex;
+    column-gap:10px;
+    justify-content:space-around;
+    height:auto;
+    overflow:hidden;
+}
+.sliders img{
+     height:300px;
+     width:200px;
+     padding:30px 0px;
+     border-radius:20%;
+     transition-property:all;
+     transition-duration:0.3s;
+     transition-delay:0;
+     transition-timing-function:linear;
+}
+.sliders img:hover{
+    transform: scale(1.1);
+}
+.reason{
+    padding-top:30px;
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+}
+.reason h2 {
+    font-family:var(--primary);
+    font-size:25px;
+    font-weight:bold;
+}
+.list{
+    display:flex;
+    column-gap:10px;
+    justify-content:space-around;
+}
+.list :is(.list-1,.list-2,.list-3,.list-4){
+    display:flex;
+    flex-direction:column;
+    row-gap:30px;
+    flex-basis:20%;
+    background:linear-gradient(135deg ,darkblue,pink);
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+.list :is(.list-1,.list-2,.list-3,.list-4) h3{
+    font-family:var(--design);
+    font-size:26px;
+}
+.list :is(.list-1,.list-2,.list-3,.list-4) p{
+    font-family:var(--secondary);
+}
+.shows .reason .list :is(.list-1,.list-2,.list-3,.list-4) img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    transform:translateX(130px);
+}
+/* body of the page ends */
+
+
+/*question style starts */
+.questions{
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+}
+.questions .triggers{
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+}
+.questions h2{
+    font-family:var(--primary);
+    font-size:28px;
+    font-weight:bold;
+}
+.triggers :is(.question-1,.question-2,.question-3,.question-4,.question-5,.question-6){
+    background-color:#564d4d;
+    padding:30px 20px;
+    font-family:var(--primary);
+    font-size:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.triggers :is(.answer-1,.answer-2,.answer-3,.answer-4,.answer-5,.answer-6){
+    display:none;
+}
+
+.email-sign-2{
+    font-family:var(--design);
+    font-weight:light;
+    font-size:1rem;
+}
+.email-sign-2{
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+    padding:20px 0px;
+}
+.email-sign-2 p{
+    text-align:center;
+}
+.email-2{
+    transform:translateX(180px);
+}
+.email-sign-2 .email-2 input{
+    padding:15px;
+    width:60%;
+    background-color:var(--primary-color);
+    color:white;
+    font-family:var(--secondary);
+    font-weight:800;
+    font-size:1rem;
+    border:1px solid white;
+}
+.email-sign-2 .email-2 input:focus{
+    outline:1px solid red;
+}
+.email-sign-2 .email-2 button{
+    padding:15px 20px;
+    background-color:var(--secondary-color);
+    border:None;
+    color:white;
+    font-family:var(--secondary);
+    font-weight:800;
+    font-size:1rem;
+    border-radius:4px;
+}
+/*question style ends */
+
+/*  footer style starts  */ 
+.footer :is(.help-1,.help-2,.help-3,.help-4) a{
+    color:white;
+}
+.footer{
+    display:flex;
+    flex-direction:column;
+    row-gap:40px;
+}
+.footer .help{
+    display:flex;
+    justify-content: space-between;
+}
+.help :is(.help-1,.help-2,.help-3,.help-4){
+    display:flex;
+    flex-direction:column;
+    row-gap:15px;
+}
+.select-2 select{
+    font-family:var(--secondary);
+    background-color:var(--primary-color);
+    color:white;
+    padding:8px 16px;
+    border:1px solid white;
+    border-radius:5px;
+}
+.footer .call {
+    font-family:var(--design);
+}
+.help :is(.help-1,.help-2,.help-3,.help-4){
+    font-family:var(--design);
+}
+.netflix {
+    padding-bottom:100px;
+}
+/* footer style ends  */

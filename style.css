@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+:root{
+    --primary : "roboto",sans-serif;
+    --secondary : "inter",sans-serif;
+    --design : "satisfy",cursive;
+    --brand:"margarine",sans-serif;
+}
+.title h1{
+    font-family: var(--primary);
+}
+.toggle{
+    width:40px;
+    height:40px;
+    display:flex;
+    flex-flow:column wrap;
+    row-gap:5px;
+    padding:6px;
+    display:none;
+}
+:is(.first-toggle,.second-toggle,.third-toggle){
+    background-color:black;
+    height:2px;
+    width:100%;
+}
+.title{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 0px;
+    background-color:ghostwhite;
+    flex-wrap:wrap;
+}
+.heading{
+    padding-left:20px;
+    flex-grow:1;
+    cursor:pointer;
+}
+.nav-bar {
+    display:flex;
+    align-items:center;
+    flex-grow:2;
+    justify-content: space-around;
+}
+.nav-bar li{
+    list-style-type:none;
+}
+.nav-bar li a{
+    text-decoration:none;
+    font-family:var(--secondary);
+    color:black;
+}
+
+@media screen and (max-width:500px){
+    .nav-bar{
+        display:none;
+    }
+    .toggle{
+        display:flex;
+        position:relative;
+        right:30px;
+        top:3px;
+    }
+}
+.dropping-nav{
+    
+    width:100%;
+    height:40vh;
+    display:none;
+}
+.column-list{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:space-around;
+}
+
+.dropping-nav .column-list li{
+    transform: translateX(10px);
+    padding:10px;
+    list-style-type:none;
+}
+.dropping-nav .column-list li:hover{
+    background-color:white;
+}
+.dropping-nav .column-list li a{
+    text-decoration:none;
+    font-family:var(--secondary);
+    color:black;
+}
+@media screen and (min-width:400px){
+    .dropping-nav{
+        display:none;
+    }
+}
